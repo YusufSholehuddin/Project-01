@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+$navbar-font: "Roboto", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  height: 60px;
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  transition: 0.8s;
+  width: 100%;
+}
+.active {
+  color: white;
+  font-weight: bold;
+}
+.main-content {
+  background-color: red;
+  height: 800px;
+  border: 1px solid red;
+}
+#mainBox {
+  display: none;
+}
+.navbar {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: $navbar-font;
+  .navbar-brand {
+    line-height: 60px;
+    color: white;
+  }
+  .navbar-item {
+    line-height: 60px;
+    display: flex;
+    .fas,
+    .fa,
+    .far {
+      display: none;
+    }
+    .navbar-link {
+      list-style: none;
+      background-color: none;
+      a {
+        color: white;
+        padding: 1rem 0;
+        margin: 1rem;
+        position: relative;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1224px) {
+  .side-menu {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: $navbar-font;
+    .navbar-brand {
+      line-height: 60px;
+      color: white;
+    }
+    .navbar-item {
+      line-height: 60px;
+      display: flex;
+      .fas,
+      .fa,
+      .far {
+        display: none;
+      }
+      .navbar-link {
+        list-style: none;
+        background-color: none;
+        a {
+          color: white;
+          padding: 1rem 0;
+          margin: 1rem;
+          position: relative;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-height: 1224px) {
+  .side-menu {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: $navbar-font;
+    .navbar-brand {
+      line-height: 60px;
+      color: white;
+    }
+    .navbar-item {
+      line-height: 60px;
+      display: flex;
+      .fas,
+      .fa,
+      .far {
+        display: none;
+      }
+      .navbar-link {
+        list-style: none;
+        background-color: none;
+        a {
+          color: white;
+          padding: 1rem 0;
+          margin: 1rem;
+          position: relative;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+// Responsive Breakpoints
+// Ukuran tablet
+@media screen and (max-width: 768px) {
+  .navbar {
+    .navbar-item {
+      display: none;
+    }
+  }
+  #mainBox {
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 12px;
+    right: 18px;
+    color: white;
+    display: block;
+  }
+  .side-menu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 0;
+    width: 0px;
+    background-color: #45aaf2;
+    z-index: 1;
+    padding-top: 60px;
+    overflow: hidden;
+    transition: 0.3s;
+    .side-menu-item {
+      margin-top: 70px;
+    }
+    .side-menu-link {
+      margin-top: 25px;
+      padding: 20px 8px 15px 0px;
+      display: block;
+      font-size: 20px;
+      text-align: center;
+      a {
+        color: white;
+      }
+      .closeBtn {
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        top: 8px;
+        left: 25px;
+        font-size: 38px;
+        margin-right: 32px;
+      }
+    }
+  }
+}

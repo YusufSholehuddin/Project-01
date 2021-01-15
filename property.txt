@@ -1,0 +1,43 @@
+BUAT WEBSITE:
+1.HEADER:
+
+	(header-left)
+	1.DY LAUNDRY
+	(header-Right)
+	2.Tentang
+	3.Layanan
+	4.kontak
+
+2.BAGIAN MAIN.
+
+	1.background-img(background.jpeg)
+	2.TITLE (DYLAUNDRY)
+	3.sub title
+	4.button(Tentang Kami)
+
+3.BAGIAN BODY.
+	1.content-1
+		a.Title(Tentang Kami)
+		b. isi
+		c.button(Layanan Kami)
+	2.content-2
+		a.TITLE (Layanan Kami)
+		b.isi
+		c.button (Kontak)
+	3.content-3
+		a.TITLE (Kontak)
+		b.any content-service with icon:
+			-pakaian
+			-karpet
+			-selimut
+			-Antar/jemput
+			-Gosok
+	4.portofolio
+		1.IMG 6
+	3.KONTAK
+		a.title
+		b.isi
+		c.contact(WA,GMAIL,IG)
+4.FOOTER.
+	1.LOGO
+	2.copyright.
